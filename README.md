@@ -19,16 +19,16 @@ bindsym XF86KbdBrightnessDown exec kbdbacklight down
 
 - Most Linux distributions encourage a practice in which each user has a specific directory for the programs he/she personally uses. This directory is called bin and is a subdirectory of your home directory. If you do not already have one, create it with the following command:
 
-`[me@linuxbox me]$ mkdir bin`
+  `[me@linuxbox me]$ mkdir bin`
 
 - Move your script into your new bin directory:
 
 - Add directories to your path with the following command, where directory is the name of the directory you want to add:
 
-`[me@linuxbox me]$ export PATH=$PATH:directory`
+  `[me@linuxbox me]$ export PATH=$PATH:directory`
 
 - In this case, it is:
 
-`[me@linuxbox me]$ export PATH=$PATH:~/bin`
+  `[me@linuxbox me]$ export PATH=$PATH:~/bin`
 
 Now, you are all set.
