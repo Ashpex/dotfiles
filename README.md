@@ -1,5 +1,5 @@
 # dotfiles
-
+![](https://cdn.dribbble.com/users/3093/screenshots/1466768/dotfiles-logo.png)
 ## Keyboard backlight
 - Basic usage is as simple as
 
