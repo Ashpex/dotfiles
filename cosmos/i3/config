@@ -176,13 +176,17 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id compton --config ~/.config/compton.conf
 
 # Gaps
-for_window [class=".*"] border pixel 0
-gaps outer -2
-gaps inner 10
+for_window [class=".*"] border pixel 2
+gaps outer -1
+gaps inner 7
+
+# Drawing border for focused window
+# class                 border   backgr   text      indicator   child_border
+client.focused         #C0C0C0   #285577  #ffffiff  #C0C0C0     #C0C0C0
 
 # Set wallpaper
 
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/4.jpg
+exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/bike.png
 
 # Brightness
 bindsym XF86MonBrightnessUp exec light -A 5
@@ -190,7 +194,7 @@ bindsym XF86MonBrightnessDown exec light -U 5
 
 # Increase/decrease keyboard brightness
 bindsym XF86KbdBrightnessUp exec kbdbacklight up
-bindsym XF86KbdBrightnessDown exec kbdbacklight down 
+bindsym XF86KbdBrightnessDown exec kbdbacklight down
 
 # Volume control
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
