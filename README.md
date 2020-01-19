@@ -1,6 +1,9 @@
-# dotfiles
-![](https://cdn.dribbble.com/users/3093/screenshots/1466768/dotfiles-logo.png)
-## Keyboard backlight
+<div align="center">
+  <h1>d o t s</h1>
+</div>
+
+## Notes
+### Keyboard backlight
 - Basic usage is as simple as
 
 ```
