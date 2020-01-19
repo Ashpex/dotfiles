@@ -181,9 +181,10 @@ gaps outer -1
 gaps inner 7
 
 # Drawing border for focused window
-# class                 border   backgr   text      indicator   child_border
-client.focused         #C0C0C0   #285577  #ffffiff  #C0C0C0     #C0C0C0
-
+# class                  border   backgr    text       indicator   child_border
+client.focused           #C0C0C0  #285577   #fffffff   #C0C0C0     #C0C0C0
+client.focused_inactive  #7e7e7e  #212121   #d9d9d9    #0d1010     #7e7e7e                                                                            
+client.unfocused         #7e7e7e  #212121   #d9d9d9    #424242     #7e7e7e  
 # Set wallpaper
 
 exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/moon.jpg
