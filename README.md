@@ -4,7 +4,7 @@
 
 ### software used:
 
-* [sway](https://github.com/Airblader/i3)
+* [i3-gaps](https://github.com/Airblader/i3)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar](https://github.com/polybar/polybar)
 * and much more
