@@ -2,6 +2,7 @@
   <h1>d o t s</h1>
 </div>
 ### software used:
+
 * [sway](https://github.com/Airblader/i3)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar](https://github.com/polybar/polybar)
