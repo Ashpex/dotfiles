@@ -186,7 +186,7 @@ client.focused         #C0C0C0   #285577  #ffffiff  #C0C0C0     #C0C0C0
 
 # Set wallpaper
 
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/4.png
+exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/moon.jpg
 
 # Brightness
 bindsym XF86MonBrightnessUp exec light -A 5
