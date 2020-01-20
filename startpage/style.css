@@ -1,0 +1,78 @@
+:root {
+	/*  ----  */
+	--bg0: #151517;
+	--bg1: #18191c;
+	--bg2: #1C1D21;
+	--bg3: #1F2126;
+	--bg4: #262930;
+	--button: #daddee1a;
+	/*  ----  */
+	--fg2: #a6a9b7;
+	--fg1: #daddee;
+	--disabled: #696969;
+	/*  ----  */
+	--accent: #7baae8;
+	--accent2: #85BBFF;
+	--false: #c488ec;
+	--hover: #ffffff;
+	--red: #e56f92;
+	/*  ----  */
+}
+
+* {
+	font-family: "Iosevka Term";
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/*body, html {
+	background-color: var(--bg1);
+}*/
+
+html {
+	background: var(--bg1);
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	width: 270px;
+	margin-top: auto;
+	display: flex;
+	overflow-y: auto;
+	flex-flow: row wrap;
+	position: relative;
+	top: -10px;
+	padding: 20px;
+}
+a:visited, a {
+	color: var(--fg2);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {	color: var(--fg1); }
+
+body {
+	position:absolute;
+	top: calc(50% - 15px);
+	left: calc(50% - 8px);
+	transform:translate(-50%,-50%);
+}
+
+a {
+	padding: 15px 17px;
+	border-radius: 4px;
+	margin: 10px;
+	width: 35px;
+	text-align: center;
+	transition: 200ms;
+}
+a:hover {
+	background: var(--bg3);
+}
