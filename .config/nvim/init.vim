@@ -30,9 +30,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 " ==================== LIGHT LINE ==================
 
 
-" ==================== ONE DARK ==================
-
-
 " ==================== OTHER CONFIG ==================
 set background=dark
 colorscheme hybrid
