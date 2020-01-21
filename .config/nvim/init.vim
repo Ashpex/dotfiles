@@ -10,14 +10,19 @@ call plug#begin('~/.vim/plugged')
 " NerdTree
 Plug 'scrooloose/nerdTree'
 
-" Light Line
+" Lightline
 Plug 'itchyny/lightline.vim'
 
-" Nord theme
+" Dark theme
 Plug 'w0ng/vim-hybrid'
 
-" Vim Fugitive
+" Vim Fugitive for git
 Plug 'tpope/vim-fugitive'
+
+" Improving editing experience
+
+Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()			
 
@@ -50,6 +55,71 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head'
       \ },
       \ }
+
+" ==================== AUTO CLOSE ==================
+"autoclose and position cursor to write text inside
+inoremap ' ''<left>
+inoremap ` ``<left>
+inoremap " ""<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+"autoclose with ; and position cursor to write text inside
+inoremap '; '';<left><left>
+inoremap `; ``;<left><left>
+inoremap "; "";<left><left>
+inoremap (; ();<left><left>
+inoremap [; [];<left><left>
+inoremap {; {};<left><left>
+"autoclose with , and position cursor to write text inside
+inoremap ', '',<left><left>
+inoremap `, ``,<left><left>
+inoremap ", "",<left><left>
+inoremap (, (),<left><left>
+inoremap [, [],<left><left>
+inoremap {, {},<left><left>
+"autoclose and position cursor after
+inoremap '<tab> ''
+inoremap `<tab> ``
+inoremap "<tab> ""
+inoremap (<tab> ()
+inoremap [<tab> []
+inoremap {<tab> {}
+"autoclose with ; and position cursor after
+inoremap ';<tab> '';
+inoremap `;<tab> ``;
+inoremap ";<tab> "";
+inoremap (;<tab> ();
+inoremap [;<tab> [];
+inoremap {;<tab> {};
+"autoclose with , and position cursor after
+inoremap ',<tab> '',
+inoremap `,<tab> ``,
+inoremap ",<tab> "",
+inoremap (,<tab> (),
+inoremap [,<tab> [],
+inoremap {,<tab> {},
+"autoclose 2 lines below and position cursor in the middle 
+inoremap '<CR> '<CR>'<ESC>O
+inoremap `<CR> `<CR>`<ESC>O
+inoremap "<CR> "<CR>"<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap {<CR> {<CR>}<ESC>O
+"autoclose 2 lines below adding ; and position cursor in the middle 
+inoremap ';<CR> '<CR>';<ESC>O
+inoremap `;<CR> `<CR>`;<ESC>O
+inoremap ";<CR> "<CR>";<ESC>O
+inoremap (;<CR> (<CR>);<ESC>O
+inoremap [;<CR> [<CR>];<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+"autoclose 2 lines below adding , and position cursor in the middle 
+inoremap ',<CR> '<CR>',<ESC>O
+inoremap `,<CR> `<CR>`,<ESC>O
+inoremap ",<CR> "<CR>",<ESC>O
+inoremap (,<CR> (<CR>),<ESC>O
+inoremap [,<CR> [<CR>],<ESC>O
+inoremap {,<CR> {<CR>},<ESC>O
 
 " ==================== OTHER CONFIG ==================
 set background=dark
