@@ -4,10 +4,14 @@
 
 ### software used:
 
+**Distribution:** Arch (GNU/Linux)
+**Font:** Iosevka Term
 * [i3-gaps](https://github.com/Airblader/i3)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar](https://github.com/polybar/polybar)
+
 * and much more
+![current setup](/scrot/2020-01_scrot.png) \*Probably out of date
 
 ### Notes
 #### Keyboard backlight
