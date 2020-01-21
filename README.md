@@ -2,8 +2,11 @@
   <h1>d o t s</h1>
 </div>
 
-![current setup](/scrot/2020-01_scrot.png) \*Probably out of date
+![current setup](/scrot/2020-01_scrot.png) 
+\*Probably out of date
+
 **Distribution:** Arch (GNU/Linux)
+
 **Font:** Iosevka Term
 
 ### software used:
