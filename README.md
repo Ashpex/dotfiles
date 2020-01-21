@@ -5,7 +5,7 @@
 ![current setup](/scrot/2020-01_scrot.png) 
 \*Probably out of date
 
-<center>**Distribution:** Arch (GNU/Linux)/ **Font:** Iosevka Term / **Hosted by:** Glorious ThinkPad</center>
+<p align="justify">Distribution:** Arch (GNU/Linux)/ **Font:** Iosevka Term / **Hosted by:** Glorious ThinkPad</p>
 
 ### software used:
 * [i3-gaps](https://github.com/Airblader/i3)
