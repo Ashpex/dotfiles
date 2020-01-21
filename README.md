@@ -3,7 +3,8 @@
 </div>
 
 ![current setup](/scrot/2020-01_scrot.png) 
-\_*Probably out of date_
+
+_Probably out of date_
 
 <div align="center">
   <b>Distribution:</b> Arch (GNU/Linux)/ <b>Font:</b> Iosevka Term / <b>Hosted by:</b> Glorious ThinkPad
