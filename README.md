@@ -2,16 +2,18 @@
   <h1>d o t s</h1>
 </div>
 
-### software used:
-
+![current setup](/scrot/2020-01_scrot.png) \*Probably out of date
 **Distribution:** Arch (GNU/Linux)
 **Font:** Iosevka Term
+
+### software used:
 * [i3-gaps](https://github.com/Airblader/i3)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar](https://github.com/polybar/polybar)
-
-* and much more
-![current setup](/scrot/2020-01_scrot.png) \*Probably out of date
+* [termite](https://github.com/thestinger/termite/)
+* [neovim](https://github.com/neovim/neovim)
+* [ranger](https://github.com/ranger/ranger)
+* and others
 
 ### Notes
 #### Keyboard backlight
