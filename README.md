@@ -6,7 +6,7 @@
 \*Probably out of date
 
 <div align="center">
-  <b>Distribution:</b> Arch (GNU/Linux)/ **Font:** Iosevka Term / **Hosted by:** Glorious ThinkPad
+  <b>Distribution:</b> Arch (GNU/Linux)/ <b>Font:</b> Iosevka Term / <b>Hosted by:</b> Glorious ThinkPad
 </div>
 
 ### software used:
