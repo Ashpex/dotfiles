@@ -6,7 +6,6 @@
 \*Probably out of date
 
 **Distribution:** Arch (GNU/Linux)
-
 **Font:** Iosevka Term
 
 ### software used:
