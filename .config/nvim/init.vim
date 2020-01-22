@@ -19,6 +19,9 @@ Plug 'w0ng/vim-hybrid'
 " Vim Fugitive for git
 Plug 'tpope/vim-fugitive'
 
+" LaTex Support
+Plug 'lervag/vimtex'
+
 " Improving editing experience
 
 Plug 'tpope/vim-surround'
@@ -56,6 +59,13 @@ let g:lightline = {
       \ },
       \ }
 
+
+" ==================== VIMTEX ==================
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+if has('nvim')
+  let g:vimtex_compiler_progname = 'nvr'
+endif
 " ==================== AUTO CLOSE ==================
 "autoclose and position cursor to write text inside
 inoremap ' ''<left>
