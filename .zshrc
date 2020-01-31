@@ -15,6 +15,14 @@ alias getip="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e
 alias vim='nvim'
 alias uni='cd ~/university/bachelor-1/semester-2/'
 alias hh='sh /home/ashpex/Downloads/scripts/hugo.sh'
+alias swayconfig='nvim ~/.config/sway/config'
+alias termconfig='nvim ~/.config/termite/config'
+alias rootconfig='nvim ~/.config/rootbar/config'
+alias rootstyle='nvim ~/.config/rootbar/style.css'
+alias woficonfig='nvim ~/.config/wofi/config'
+alias wofistyle='nvim ~/.config/wofi/style.css'
+alias i3config='nvim ~/.config/i3/config'
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
