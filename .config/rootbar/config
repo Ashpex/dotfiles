@@ -1,0 +1,36 @@
+bars=primary
+
+primary-output=eDP-1
+primary-left=battery,cpu,memory,date,updates
+primary-right=ws
+
+ws-dso=workspace
+ws-show_all=true
+ws-name_only=false
+
+date-dso=clock
+date-length=50
+date-format=%A, %b. %e, %Y %H:%M:%S |
+
+cpu-dso=cpu
+cpu-interval=1000
+cpu-format=cpu %u%%
+cpu-allow_markup=true
+cpu-length=50
+
+memory-dso=memory
+memory-interval=1000
+memory-percent=true
+memory-format=mem %.0f%s |
+memory-allow_markup=true
+memory-length=50
+
+battery-dso=external
+battery-exec=battery
+battery-length=10
+battery-interval=5000
+
+updates-dso=external
+updates-exec=updates
+updates-length=10
+updates-interval=600000

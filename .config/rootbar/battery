@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+STR=$(acpi)
+PERCENT=$(echo $STR | grep -o "[0-9]*%")    
+STATUS=$(echo $STR | tr ' ' '\n' | head -n3 | tr -d ',' | tail -n1)     
+echo "${STATUS:0:1}: $PERCENT |"
