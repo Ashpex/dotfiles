@@ -138,3 +138,6 @@ set number
 set tabstop=4
 :se cursorline
 syntax on
+" Living on the edge
+set noswapfile
+set nobackup
