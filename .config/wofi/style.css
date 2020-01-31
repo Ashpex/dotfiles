@@ -1,0 +1,57 @@
+window {
+	background-color: rgba(--wofi-rgb-color0, 0);
+	font-family: "Iosevka Extended Medium";
+	/*border: 5px solid #E06C75;*/
+}
+
+#input image {
+	color: rgba(0,0,0,0);
+}
+
+#input {
+	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	background-color: --wofi-color10;
+	border-radius: 0;
+	border: 5px solid --wofi-color1;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+	min-height: 40px;
+	color: --wofi-color0;
+}
+
+#input:focus {
+	background-color: --wofi-color10;
+}
+
+#inner-box {
+	background-color: transparent;
+}
+
+#outer-box {
+	background-color: rgba(0,0,0,0);
+	margin: 10px;
+}
+
+#scroll {
+	padding: 25px;
+	background-color: rgba(0,0,0,0);
+	background-color: rgba(--wofi-rgb-color0,1);
+	border-top: 5px solid --wofi-color5;
+	border: 2px solid --wofi-color4;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 25px;
+}
+
+label {
+	margin:-2;
+	padding: 5px;
+	color: --wofi-color3;
+}
+
+#entry:target {
+	border: 5px solid red;
+}

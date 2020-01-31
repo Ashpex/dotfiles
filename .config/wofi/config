@@ -1,0 +1,7 @@
+width=660
+height=500
+x=630
+y=150
+mode=run
+filter_rate=100
+dmenu-parse_action=true
