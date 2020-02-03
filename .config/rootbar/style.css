@@ -1,7 +1,7 @@
 window {
 	background-color: --rootbar-color0;
 	color: #C9C9CB;
-	font-family: "Iosevka Extended Medium";
+	font-family: "Iosevka Medium Extended";
 }
 
 label {
@@ -27,16 +27,4 @@ label {
 #ws-focused {
 	background-color: #444444;
 	border-bottom: 3px solid --rootbar-color2;
-}
-
-#cput {
-	color: #7E7F80;
-	margin-right: 0;
-	padding-right: 5px;
-}
-
-#memt {
-	color: #7E7F80;
-	margin-right: 0;
-	padding-right: 5px;
 }
