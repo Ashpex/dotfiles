@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# get battery status and percent
 STR=$(acpi)
 PERCENT=$(echo $STR | grep -o "[0-9]*%")    
 STATUS=$(echo $STR | tr ' ' '\n' | head -n3 | tr -d ',' | tail -n1)     
