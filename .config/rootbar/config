@@ -1,8 +1,8 @@
 bars=primary
 
 primary-output=eDP-1
-primary-left=battery,cpu,memory,date,updates
-primary-right=ws
+primary-left=ws
+primary-right=battery,cpu,memory,date,network,updates
 
 ws-dso=workspace
 ws-show_all=true
@@ -26,11 +26,16 @@ memory-allow_markup=true
 memory-length=50
 
 battery-dso=external
-battery-exec=battery
+battery-exec=/home/sebastian/.config/rootbar/battery
 battery-length=10
 battery-interval=5000
 
 updates-dso=external
-updates-exec=updates
+updates-exec=/home/sebastian/.config/rootbar/updates
 updates-length=10
 updates-interval=600000
+
+network-dso=external
+network-exec=/home/sebastian/.config/rootbar/network
+network-length=100
+network-interval=4000
