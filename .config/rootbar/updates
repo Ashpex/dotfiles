@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-
+#!/bin/sh
+#
+# get number of packages that need to be updated
 if ! updates=$(checkupdates 2> /dev/null | wc -l ); then
     updates=0
 fi
