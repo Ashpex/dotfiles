@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ashpex/.oh-my-zsh"
 export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 # Excute sway
 #if [ "$(tty)" = "/dev/tty1" ]; then
 #	exec sway
@@ -23,12 +24,6 @@ alias rootstyle='nvim ~/.config/rootbar/style.css'
 alias woficonfig='nvim ~/.config/wofi/config'
 alias wofistyle='nvim ~/.config/wofi/style.css'
 alias i3config='nvim ~/.config/i3/config'
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,9 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
