@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#
+# returns connected wifi ssid
+SSID=$(nmcli | grep "^wlp3s0:" | cut -d : -f 2 | awk 'NF{ print $NF }')
+echo " $SSID |"
