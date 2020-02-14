@@ -15,7 +15,7 @@ Plug 'itchyny/lightline.vim'
 
 " Dark theme
 Plug 'w0ng/vim-hybrid'
-
+Plug 'morhetz/gruvbox'
 " Vim Fugitive for git
 Plug 'tpope/vim-fugitive'
 
@@ -49,7 +49,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " ==================== LIGHT LINE ==================
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -133,9 +133,10 @@ inoremap {,<CR> {<CR>},<ESC>O
 
 " ==================== OTHER CONFIG ==================
 set background=dark
-colorscheme hybrid
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
 set number
-set tabstop=4
+set tabstop=2
 :se cursorline
 syntax on
 " Living on the edge
