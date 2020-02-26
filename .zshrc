@@ -4,19 +4,18 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ashpex/.oh-my-zsh"
 export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-# Excute sway
-#if [ "$(tty)" = "/dev/tty1" ]; then
-#	exec sway
-#fi
 
-# set zsh theme
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 # Custom alias
 alias getip="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 alias vim='nvim'
 alias uni='cd ~/university/bachelor-1/semester-2/'
 alias hh='sh /home/ashpex/Downloads/scripts/hugo.sh'
+alias berg='sh /home/ashpex/Downloads/scripts/codeberg.sh'
 alias swayconfig='nvim ~/.config/sway/config'
 alias termconfig='nvim ~/.config/termite/config'
 alias rootconfig='nvim ~/.config/rootbar/config'
@@ -24,6 +23,14 @@ alias rootstyle='nvim ~/.config/rootbar/style.css'
 alias woficonfig='nvim ~/.config/wofi/config'
 alias wofistyle='nvim ~/.config/wofi/style.css'
 alias i3config='nvim ~/.config/i3/config'
+alias picomp='nvim ~/.config/picom.conf'
+alias polybar='nvim ~/.config/polybar/config'
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,6 +92,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -95,4 +105,11 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
