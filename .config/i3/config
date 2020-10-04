@@ -36,7 +36,7 @@ bindsym $mod+Return exec termite
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun -show-icons
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -187,7 +187,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/coffee.png
+exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/city.png
 
 # Brightness
 bindsym XF86MonBrightnessUp exec light -A 5
@@ -198,12 +198,12 @@ bindsym XF86KbdBrightnessUp exec kbdbacklight up
 bindsym XF86KbdBrightnessDown exec kbdbacklight down
 
 # Volume control
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Take screenshot
-bindsym Control+Print exec scrot
+bindsym Control+Print exec scrot -e 'mv $f ~/Downloads/screenshot/'
 
 # Lock screen
 
