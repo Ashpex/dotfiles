@@ -13,9 +13,10 @@ Plug 'scrooloose/nerdTree'
 " Lightline
 Plug 'itchyny/lightline.vim'
 
-" Dark theme
-Plug 'w0ng/vim-hybrid'
+" Themes
 Plug 'morhetz/gruvbox'
+Plug 'ayu-theme/ayu-vim'
+
 " Vim Fugitive for git
 Plug 'tpope/vim-fugitive'
 
@@ -23,11 +24,10 @@ Plug 'tpope/vim-fugitive'
 Plug 'lervag/vimtex'
 
 " Improving editing experience
-
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 
-call plug#end()			
+call plug#end()
 
 " ==================== NERD TREE ==================
 
@@ -49,7 +49,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " ==================== LIGHT LINE ==================
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'ayu',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -132,12 +132,15 @@ inoremap [,<CR> [<CR>],<ESC>O
 inoremap {,<CR> {<CR>},<ESC>O
 
 " ==================== OTHER CONFIG ==================
-set background=dark
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = 'hard'
+
+set termguicolors     " enable true colors support
+let ayucolor="dark" " for mirage version of theme
+colorscheme ayu
+
 set number
-set tabstop=2
-:se cursorline
+set tabstop=4
+set shiftwidth=4
+set cursorline
 syntax on
 " Living on the edge
 set noswapfile
