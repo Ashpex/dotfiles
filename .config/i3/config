@@ -187,7 +187,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id picom
 
 # Set wallpaper
-exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/city.png
+exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/train.png
 
 # Brightness
 bindsym XF86MonBrightnessUp exec light -A 5
