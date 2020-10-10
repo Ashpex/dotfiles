@@ -20,9 +20,6 @@ Plug 'ayu-theme/ayu-vim'
 " Vim Fugitive for git
 Plug 'tpope/vim-fugitive'
 
-" LaTex Support
-Plug 'lervag/vimtex'
-
 " Improving editing experience
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
