@@ -217,3 +217,8 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
+
+# Other applicantions binds
+
+bindsym Control+Mod1+r exec termite -e ranger # open ranger: ctrl + alt + r
+bindsym Control+Mod1+h exec termite -e htop # open htop: ctrl + alt + h
