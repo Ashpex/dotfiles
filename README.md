@@ -14,6 +14,7 @@ _(*) Probably out of date_
 * [i3-gaps](https://github.com/Airblader/i3)
 * [rofi](https://github.com/davatorium/rofi)
 * [polybar](https://github.com/polybar/polybar)
+* [alacritty](https://github.com/alacritty/alacritty)
 * [termite](https://github.com/thestinger/termite/)
 * [neovim](https://github.com/neovim/neovim)
 * [ranger](https://github.com/ranger/ranger)
