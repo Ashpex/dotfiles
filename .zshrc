@@ -13,13 +13,12 @@ ZSH_THEME="robbyrussell"
 # Custom alias
 alias getip="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
 alias vim='nvim'
-alias uni='cd ~/university/bachelor-1/semester-2/'
-alias hh='sh /home/ashpex/Downloads/scripts/hugo.sh'
-alias neo='sh /home/ashpex/Downloads/scripts/neo.sh'
-alias berg='sh /home/ashpex/Downloads/scripts/codeberg.sh'
-alias token='sh /home/ashpex/Downloads/scripts/token.sh'
-alias tor='cd ~/Downloads/tor-browser_en-US && ./start-tor-browser.desktop'
-alias keepass='cd ~/Downloads/apps/keepass && ./*'
+alias uni='cd ~/university/bachelor-2/semester-1/'
+alias dev='cd ~/dev/c++/uni/'
+alias hh='sh ~/scripts/hugo.sh'
+alias neo='sh ~/scripts/neo.sh'
+alias berg='sh ~/scripts/codeberg.sh'
+alias bluetooth='sh ~/scripts/bluetooth.sh'
 alias swayconfig='nvim ~/.config/sway/config'
 alias termconfig='nvim ~/.config/termite/config'
 alias rootconfig='nvim ~/.config/rootbar/config'
@@ -28,7 +27,7 @@ alias woficonfig='nvim ~/.config/wofi/config'
 alias wofistyle='nvim ~/.config/wofi/style.css'
 alias i3config='nvim ~/.config/i3/config'
 alias piconfig='nvim ~/.config/picom.conf'
-alias polybar='nvim ~/.config/polybar/config'
+alias polybarconfig='nvim ~/.config/polybar/config'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
