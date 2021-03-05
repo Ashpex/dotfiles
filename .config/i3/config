@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -180,6 +180,9 @@ client.focused           #C0C0C0  #285577   #fffffff   #C0C0C0     #C0C0C0
 client.focused_inactive  #696969  #212121   #d9d9d9    #0d1010     #696969                                                                            
 client.unfocused         #696969  #212121   #d9d9d9    #424242     #696969  
 
+# Set monitor
+exec --no-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --output eDP-1 --off'
+
 # Start Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -203,7 +206,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Take screenshot
-bindsym Control+Print exec scrot -e 'mv $f ~/Downloads/screenshot/'
+bindsym Control+Mod1+s exec scrot -e 'mv $f ~/Pictures/screenshot/'
 
 # Lock screen
 
@@ -220,5 +223,5 @@ bindsym $mod+minus scratchpad show
 
 # Other applicantions binds
 
-bindsym Control+Mod1+r exec termite -e ranger # open ranger: ctrl + alt + r
-bindsym Control+Mod1+h exec termite -e htop # open htop: ctrl + alt + h
+bindsym Control+Mod1+r exec alacritty -e ranger # open ranger: ctrl + alt + r
+bindsym Control+Mod1+h exec alacritty -e htop # open htop: ctrl + alt + h
