@@ -1,3 +1,5 @@
-font=Iosevka Extended Medium 10
-icons=1
-default-timeout=5000
+text-color=#282828
+background-color=#ebdbb2
+border-color=#282828
+default-timeout=8000
+font=JetBrains Mono 10
