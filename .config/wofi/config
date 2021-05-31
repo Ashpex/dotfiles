@@ -1,6 +1,12 @@
-width=660
-height=500
-x=630
-y=150
-filter_rate=100
+mode=drun
+height=440
+width=760
+#content_halign=end
+#location=8
+colors=colors
+filter_rate=1
 dmenu-parse_action=true
+allow_images=true
+line_wrap=word_char
+insensitive=true
+term=kitty
