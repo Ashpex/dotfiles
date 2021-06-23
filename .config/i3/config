@@ -208,7 +208,7 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Take screenshot ctrl + alt + s
-bindsym Control+Mod1+s exec scrot -sfe 'mv $f ~/Pictures/screenshot/'
+bindsym --release Control+Mod1+s exec scrot -sfe 'mv $f ~/Pictures/screenshot/'
 bindsym Control+Mod1+f exec scrot -e 'mv $f  ~/Pictures/screenshot/'  
 # Lock screen
 
