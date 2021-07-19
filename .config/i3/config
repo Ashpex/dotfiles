@@ -181,8 +181,8 @@ client.focused_inactive  #696969  #212121   #d9d9d9    #0d1010     #696969
 client.unfocused         #696969  #212121   #d9d9d9    #424242     #696969  
 
 # Set monitor
-exec --no-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --output eDP-1 --off'
-
+#exec --no-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --output eDP-1 --off'
+exec --not-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --primary --left-of eDP-1  --output eDP-1 --mode 1920x1080'
 # Start Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
@@ -227,3 +227,7 @@ bindsym $mod+minus scratchpad show
 
 bindsym Control+Mod1+r exec alacritty -e ranger # open ranger: ctrl + alt + r
 bindsym Control+Mod1+h exec alacritty -e htop # open htop: ctrl + alt + h
+
+bindsym Control+Mod1+v exec ibus-daemon -d # run ibus
+bindsym Control+Mod1+k exec pkill ibus-daemon # kill ibus
+
