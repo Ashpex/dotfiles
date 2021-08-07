@@ -180,14 +180,15 @@ client.focused           #C0C0C0  #285577   #fffffff   #C0C0C0     #C0C0C0
 client.focused_inactive  #696969  #212121   #d9d9d9    #0d1010     #696969                                                                            
 client.unfocused         #696969  #212121   #d9d9d9    #424242     #696969  
 
-# Set monitor
-#exec --no-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --output eDP-1 --off'
-exec --not-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --primary --left-of eDP-1  --output eDP-1 --mode 1920x1080'
 # Start Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Start picom
 exec --no-startup-id picom --experimental-backends
+
+# Set monitor
+#exec --no-startup-id sh -c 'xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --output eDP-1 --off'
+exec --not-startup-id xrandr --output HDMI-2 --mode 2560x1440 --rate 59.95 --primary --left-of eDP-1  --output eDP-1 --mode 1920x1080
 
 # Set wallpaper
 exec --no-startup-id feh --bg-fill ~/Downloads/wallpapers/car.jpg
