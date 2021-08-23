@@ -12,6 +12,28 @@ export PATH=$PATH:$(ruby -e 'puts Gem.user_dir')/bin
 export ZSH="/home/ashpex/.oh-my-zsh"
 export LC_ALL=en_US.UTF-8
 
+#export ANDROID_SDK_ROOT='/opt/android-sdk'
+#export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
+#export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin/
+#export PATH=$PATH:$ANDROID_ROOT/emulator
+#export PATH=$PATH:$ANDROID_SDK_ROOT/tools/
+#alias emulator='$ANDROID_SDK_ROOT/emulator/emulator'
+export ANDROID_HOME='/home/ashpex/Android/Sdk'
+export ANDROID_SDK_ROOT='home/ashpex/Android/Sdk'
+export PATH=$PATH:/opt/flutter/bin
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk'
+export PATH=$JAVA_HOME/bin:$PATH
+source /usr/share/nvm/init-nvm.sh
+
+
+# IBUS
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT4_IM_MODULE=ibus
+export CLUTTER_IM_MODULE=ibus
+export GLFW_IM_MODULE=ibus
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
