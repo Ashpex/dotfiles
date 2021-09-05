@@ -5,7 +5,7 @@
 configuration {
     width:            40;
     hide-scrollbar:   true;
-    font:             "Iosevka Slab 12";
+    font:             "Iosevka Bold 14";
 }
 
 * {
@@ -142,13 +142,16 @@ configuration {
 #element-icon {
     size:    64px;
     border:  0px;
-}
+    background-color: inherit;
+    text-color:       inherit;}
 
 #element-text {
     expand:              true;
     horizontal-align:    0.5;
     vertical-align:      0.5;
     margin:              5px 10px 0px 10px;
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #element.normal.normal {
