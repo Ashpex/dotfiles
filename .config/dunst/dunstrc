@@ -3,7 +3,7 @@
     NotShowIn=KDE;Cinnamon;deepin
     monitor = 0
     follow = mouse
-    geometry = "500x5-40+50"
+    geometry = "500x5-40-50"
     indicate_hidden = yes
     shrink = yes
     transparency = 0
@@ -16,7 +16,7 @@
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font = Iosevka Term 14px
+    font = Iosevka Term 15.5px
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -29,7 +29,7 @@
     hide_duplicate_count = false
     show_indicators = yes
     icon_position = left
-    max_icon_size = 32
+    max_icon_size = 33
     icon_path = ""
     sticky_history = yes
     history_length = 20

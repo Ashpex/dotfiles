@@ -24,6 +24,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
 
+"Autocomplete
+Plug 'codota/tabnine-vim'
+
+" Latex
+Plug 'lervag/vimtex'
 call plug#end()
 
 " ==================== NERD TREE ==================
@@ -46,7 +51,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " ==================== LIGHT LINE ==================
 set noshowmode
 let g:lightline = {
-      \ 'colorscheme': 'ayu',
+      \ 'colorscheme': 'ayu_mirage',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]

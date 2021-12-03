@@ -1,0 +1,14 @@
+q
+h
+help
+pause
+add Music/
+a ~/Music
+colorscheme theme
+colorscheme sage
+colorscheme nerdz
+colorscheme theme.theme
+load
+add ~/Music
+colorcheme theme
+:colorscheme theme

@@ -1,8 +1,0 @@
-* {
-  accent:           rgba ( 210, 32, 22, 100% );
-  background:       rgba ( 21, 24, 28, 100 % );
-  background-light: #1C252A;
-  foreground:       rgba ( 247, 247, 247, 100 % );
-  on:               #5BB462;
-  off:              #DE635E;
-}

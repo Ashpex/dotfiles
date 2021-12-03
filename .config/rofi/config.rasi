@@ -1,6 +1,6 @@
+/** Basic config file **/
+
 configuration {
-	modi: "drun";
-	show-icons: true;
-	icon-theme: "Parius";
-	theme: "pare";
+  show-icons:         true;
+  icon-theme:         "Papirus";
 }
